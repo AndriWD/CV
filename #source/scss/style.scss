@@ -1,0 +1,210 @@
+//підключення шрифтів
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+//міксини
+@mixin flexbox()
+{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+@mixin anim($time, $delay) {-moz-transition: all $time ease $delay;  -ms-transition: all $time ease $delay; -webkit-transition: all $time ease $delay; -o-transition: all $time ease $delay; transition: all $time ease $delay;}
+@mixin rotate($deg){-moz-transform: rotate($deg); -ms-transform: rotate($deg);-webkit-transform: rotate($deg); -o-transform: rotate($deg); transform: rotate($deg);}
+@mixin scale($num) {-moz-transform: scale($num); -ms-transform: scale($num); -webkit-transform: scale($num); -o-transfrom: scale($num); transform: scale($num);}
+
+
+
+//Перемінні
+$fontFamily: "Lobster";
+
+$minWidth: 900px;
+
+$maxWidth: 900px;
+
+$ColorText: #000;
+
+//перемінні для брейкпоїнтів
+$minwidth: 320px;
+$mw: 880px; 
+$md1:$mw+12;
+$md2: 750;
+$md3: 767.98;
+$md4: 479.98;
+
+
+//Обнуляющий шаблон
+*{
+padding: 0;
+margin: 0;
+border: 0;
+}
+
+*,*:before, *:after{
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav, footer, header, aside{display: block;}
+html, body{
+height: 100%;
+font-size: 100%;
+line-height: 1;
+font-size: 14px;
+font-family: $fontFamily;
+margin: 0;
+padding: 0;
+
+position: relative;
+width: 100%;
+-ms-text-size-adjust: 100%;
+-moz-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea{font-family: $fontFamily;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding: 0; border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li {list-style: none;}
+img{vertical-align: top;}
+
+h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
+
+
+//основна частина
+.container1 {
+	@include flexbox();
+	border: 10px solid #000;
+	height: auto 100%;
+	font-family: $fontFamily;
+
+}
+.container-left{
+	background-color: black;
+	color: white;
+	width: 300px;
+	height: auto 100%;
+	border: 10px solid #000;
+	font-family: $fontFamily;
+}
+.container-left-title {
+	padding: 10px;
+	padding-left: 40px;
+	font-size: 30px;
+}
+.container-left-title_name_ru {
+	margin-left: -15px;
+	line-height: 0.5;
+}
+.container-left-title_name_en {
+	margin-left: -15px;
+	margin-top: 20px;
+	
+}
+.container-left-title_face {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+.container-left-body-contacts_title {
+	margin-top: 20px;
+	font-size: 30px;
+	text-align: center;
+}
+.container-left-body-contacts-item {
+	margin-top: 12px;
+	@include flexbox();
+}
+.container-left-body-contacts-item_img {
+	border: 1px solid #white;
+	z-index: 5;
+	background-color: white;
+	color: white;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	margin-left: 25px;
+
+}
+.container-left-body-contacts-item_phoneNumber {
+	font-size: 15px;
+	padding-top: 12px;
+	padding-left: 25px;
+
+}
+.container-right {
+	width: 65%;
+}
+.I-am-C-developer {
+	font-size: 35px;
+	text-align: center;
+}
+.container-right-item {
+	width: 100%;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	margin: 15px;
+	.container-right-item_title {
+	line-height: 0.85;
+	font-size: 25px;
+
+	border-bottom: 2px solid #000;
+	width: 100%;
+}
+.container-right-item_text {
+	margin-top: 20px;
+	font-size: 17px;
+}
+}
+.container-right-item_textBold {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-weight: bold;
+	span {
+		font-weight: normal;
+	}
+}
+
+.Strengths td::before {
+			content: '✔';
+			font-weight: bold;
+			margin-right: 5px;
+
+
+		}
+	
+	.Weaknesses td::before {
+		content: '✘';
+			font-weight: bold;
+			margin-right: 5px;
+	}
+	.skills {
+		@include flexbox();
+		justify-content: space-between;
+
+	}
+	.container-right-item-skillsItem {
+		@include flexbox();
+		display: block;
+		width: 175px;
+
+}
+.container-right-item-skillsItem_title {
+	
+}
+.progress {
+	
+}
+.Skills-title {
+	margin-bottom: 10px;
+}
+.experience {
+	margin-bottom: -2px;
+}

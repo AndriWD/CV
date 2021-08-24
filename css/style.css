@@ -1,0 +1,218 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  font-family: "Lobster";
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: "Lobster";
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.container1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 10px solid #000;
+  height: auto 100%;
+  font-family: "Lobster";
+}
+
+.container-left {
+  background-color: black;
+  color: white;
+  width: 300px;
+  height: auto 100%;
+  border: 10px solid #000;
+  font-family: "Lobster";
+}
+
+.container-left-title {
+  padding: 10px;
+  padding-left: 40px;
+  font-size: 30px;
+}
+
+.container-left-title_name_ru {
+  margin-left: -15px;
+  line-height: 0.5;
+}
+
+.container-left-title_name_en {
+  margin-left: -15px;
+  margin-top: 20px;
+}
+
+.container-left-title_face {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.container-left-body-contacts_title {
+  margin-top: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.container-left-body-contacts-item {
+  margin-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-left-body-contacts-item_img {
+  border: 1px solid #white;
+  z-index: 5;
+  background-color: white;
+  color: white;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin-left: 25px;
+}
+
+.container-left-body-contacts-item_phoneNumber {
+  font-size: 15px;
+  padding-top: 12px;
+  padding-left: 25px;
+}
+
+.container-right {
+  width: 65%;
+}
+
+.I-am-C-developer {
+  font-size: 35px;
+  text-align: center;
+}
+
+.container-right-item {
+  width: 100%;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  margin: 15px;
+}
+.container-right-item .container-right-item_title {
+  line-height: 0.85;
+  font-size: 25px;
+  border-bottom: 2px solid #000;
+  width: 100%;
+}
+.container-right-item .container-right-item_text {
+  margin-top: 20px;
+  font-size: 17px;
+}
+
+.container-right-item_textBold {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.container-right-item_textBold span {
+  font-weight: normal;
+}
+
+.Strengths td::before {
+  content: "✔";
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.Weaknesses td::before {
+  content: "✘";
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container-right-item-skillsItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: block;
+  width: 175px;
+}
+
+.Skills-title {
+  margin-bottom: 10px;
+}
+
+.experience {
+  margin-bottom: -2px;
+}
